@@ -1,7 +1,8 @@
 import connect from "@/lib/db";
-import User from "@/lib/dbSchemaModels/user";
+import   User from "@/lib/dbSchemaModels/user";
 import { NextResponse } from "next/server";
 import { Types } from "mongoose";
+
 
 // GET function to retrieve all users
 const ObjectId = require("mongoose").Types.ObjectId;
