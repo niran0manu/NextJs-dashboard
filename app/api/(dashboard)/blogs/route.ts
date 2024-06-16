@@ -56,7 +56,8 @@ export const GET = async (request: Request) => {
       category: new Types.ObjectId(categoryId),
     };
 
-    //
+    // 2do
+
     const blogs = await Blog.find(filter);
     return new NextResponse(JSON.stringify(blogs), { status: 200 });
   } catch (error: any) {
