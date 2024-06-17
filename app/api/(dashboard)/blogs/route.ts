@@ -88,8 +88,18 @@ export const GET = async (request: Request) => {
       };
     }
 
-    const blogs = await Blog.find(filter);
-    return new NextResponse(JSON.stringify(blogs), { status: 200 });
+    const skip = (page - 1) * limit;
+
+    const blogs = await Blog.find(filter)
+      .sort({ createdAt: "asc" })
+      .skip(skip)
+      .limit(limit);
+
+    return new NextResponse(JSON.stringify({ blogs }), {
+      status: 200,
+    });
+
+   
   } catch (error: any) {
     return new NextResponse(
       "Error in fetching blog: " + error.message,
