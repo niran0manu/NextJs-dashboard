@@ -17,6 +17,7 @@ export const GET = async () => {
 };
 
 
+// use this it sign up or create author
 export const POST = async (req: NextRequest) => {
   try {
     const body = await req.json();
