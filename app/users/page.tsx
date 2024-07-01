@@ -23,7 +23,7 @@ const UsersPage = () => {
 
   return (
     <div>
-      <h1>All users</h1>
+      <h1>The list of All users</h1>
       <ul>
         {users.map((user: any) => (
           <li key={user._id}>{user.username}--- {user.email}</li>
