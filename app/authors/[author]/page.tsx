@@ -24,7 +24,7 @@ const AuthorPage = ({ params }: { params: { author: string } }) => {
 
   return (
     <div>
-      <h1>Author</h1>
+      <h1>Author:</h1>
       {author && (
         <div>
           <h1>{author.name}</h1>
