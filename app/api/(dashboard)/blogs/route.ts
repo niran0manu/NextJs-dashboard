@@ -12,7 +12,7 @@ export const GET = async (request: Request) => {
     const { searchParams } = new URL(request.url);
     const userId = searchParams.get("userId");
     const categoryId = searchParams.get("categoryId");
-      const searchKeywords = searchParams.get("keywords") as string;
+    const searchKeywords = searchParams.get("keywords") as string;
     const startDate = searchParams.get("startDate");
     const endDate = searchParams.get("endDate");
     const page: any = parseInt(searchParams.get("page") || "1");

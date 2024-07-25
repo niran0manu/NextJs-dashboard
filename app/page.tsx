@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="container mx-auto p-4">
       <nav className="flex justify-between items-center mb-8 p-4 bg-gray-100 rounded-lg">
-        <h1 className="text-2xl font-bold">NewsLetter<span className='text-red-500'>Hub</span></h1>
+        <h1 className="text-2xl font-bold">NewsLetter<span className='text-red-500'>Now</span></h1>
         <div className="flex items-center space-x-4">
           <input 
             type="text" 
