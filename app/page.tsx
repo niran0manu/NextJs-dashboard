@@ -26,7 +26,7 @@ export default function Home() {
       <hr></hr>
    
       <main>
-        <h1>hello</h1>
+        <h1>Hello User</h1>
         <Link href="/users">Users here</Link>
         <br />
        
